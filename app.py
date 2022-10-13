@@ -19,8 +19,8 @@ prédit.
 """)
 
 
-val_imgs = glob.glob("../P8_Cityscapes_leftImg8bit_trainvaltest/leftImg8bit/val/*/*.png")
-val_masks = glob.glob("../P8_Cityscapes_gtFine_trainvaltest/gtFine/val/*/*color.png")
+val_imgs = glob.glob("images/color/*.png")
+val_masks = glob.glob("images/mask/*.png")
 
 image_id = st.slider("Choisissez l'id de l'image", 0, 499, 1)
 
