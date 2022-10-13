@@ -27,8 +27,8 @@ image_id = st.slider("Choisissez l'id de l'image", 0, 9, 1)
 color_image = Image.open(val_imgs[image_id])
 mask_image = Image.open(val_masks[image_id])
 
-st.write(val_imgs)
-st.write(val_masks)
+st.write(sorted(val_imgs, key=str))
+st.write(sorted(val_masks, key=str))
 
 col1, col2 = st.columns(2)
 with col1:
