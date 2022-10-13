@@ -22,7 +22,7 @@ prédit.
 val_imgs = glob.glob("images/color/*.png")
 val_masks = glob.glob("images/mask/*.png")
 
-image_id = st.slider("Choisissez l'id de l'image", 0, 499, 1)
+image_id = st.slider("Choisissez l'id de l'image", 0, 9, 1)
 
 color_image = Image.open(val_imgs[image_id])
 mask_image = Image.open(val_masks[image_id])
