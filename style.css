@@ -1,0 +1,35 @@
+.highlight {
+    border-radius: 0.35rem;
+    color: white;
+    padding: 0.05rem;
+    margin-bottom: 1rem;
+  }
+  .bold {
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+  .void {
+    background-color: rgb(0, 0, 0)
+  }
+  .flat {
+    background-color: rgb(128, 64, 128)
+  }
+  .construction {
+    background-color: rgb(102, 102, 156)
+  }
+  .object {
+    background-color: rgb(153, 153, 153)
+  }
+  .nature {
+    background-color: rgb(107, 142, 35)
+  }
+  .sky {
+    background-color: rgb(70, 130, 180)
+  }
+  .human {
+    background-color: rgb(255, 0, 0)
+  }
+  .vehicle {
+    background-color: rgb(0, 0, 142)
+  }
+
