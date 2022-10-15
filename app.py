@@ -25,7 +25,7 @@ val_masks = glob.glob("images/mask/*.png")
 val_imgs = sorted(val_imgs, key=str)
 val_masks = sorted(val_masks, key=str)
 
-image_id = st.slider("Choisissez l'id de l'image", 0, 9, 1)
+image_id = st.slider("Choisissez l'id de l'image", 0, 9, 0)
 
 color_image = Image.open(val_imgs[image_id])
 mask_image = Image.open(val_masks[image_id])
@@ -40,7 +40,7 @@ with col2:
     st.image(mask_image)
     
 
-url = "http://127.0.0.1:5000/predict"
+url = "https://cityscape-api-oc.herokuapp.com/predict"
 content_type = 'image/png'
 headers = {'content-type': content_type}
 
